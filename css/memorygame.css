@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+}
+
+.choose {
+    display: flex;
+    float: left;
+    width: 100px;
+    height: 100px;
+    opacity: 0.2;
+    cursor: pointer;
+    margin: 15px;
+}
+
+#endGame {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#infoGame {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#gameContainer {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#infoContainer {
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    width: 75%;
+    height: 75%;
+}
+
+.hidden {
+    display: none;
+}
+
+.chooseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#level, #time, .play, .nextRound, .repaly {
+    margin: 10px;
+}
+
+#div1 {
+    background-color: red;
+}
+
+#div2 {
+    background-color: green;
+}
+
+#div3 {
+    background-color: blue;
+}
+
+#div4 {
+    background-color: yellow;
+}
+
+.play, .repaly, .nextRound {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.play:hover, .repaly:hover, .nextRound:hover {
+    font-family: "Open Sans", sans-serif;
+    color: #1C77C3;
+    background-color: white;
+    border: 1px white solid;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .chooseContainer {
+        width: 260px;
+    }
+}
